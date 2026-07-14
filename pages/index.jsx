@@ -54,11 +54,11 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className="w-[1280px] h-full absolute right-0 bottom-0">
+      <div className="w-full h-full absolute right-0 bottom-0 overflow-hidden">
         {/* bg img */}
         <div
           role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
+          className="bg-explosion bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 opacity-50 xl:opacity-100"
           aria-hidden
         />
 
@@ -72,7 +72,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[400px] max-h-[400px] xl:max-w-[737px] xl:max-h-[678px] absolute -bottom-20 right-[5%] xl:-bottom-32 xl:right-[8%]"
         >
           <Avatar />
         </motion.div>
